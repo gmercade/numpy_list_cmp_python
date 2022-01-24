@@ -18,8 +18,13 @@ if __name__ == '__main__':
     # Realizar una funcion lambda que eleve al cuadrado
     # el número pasado como parámetro
 
-    # potencia_2 = lambda x:......
-    # pot_3 = potencia_2(3)
+    print("EJERCICIO 1 -------") 
+    potencia_2 = lambda x: x**2
+   
+    nu=int(input("Ingrese nro: "))
+    pot_3 = potencia_2(nu)
+    print("La potencia de ",nu,"  es  ",pot_3)
+    print("--------------------------------")
 
     # 2)
     # Utilice la función map para mapear una lambda expression
@@ -33,8 +38,10 @@ if __name__ == '__main__':
     # directamente la lambda.
 
     # Lista de numeros
+    print("EJERCICIO 2 -------") 
     numeros = [1, -5, 4, 3]
 
-    # numeros_potencia = list(map....)
+    numeros_potencia = list(map(lambda x: x**2,numeros))
+    print(numeros_potencia)
 
     print("terminamos")
